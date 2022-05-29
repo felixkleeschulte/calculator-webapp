@@ -23,3 +23,9 @@ function clearCalculator() {
     let container = document.getElementById("resultArea");
     container.innerHTML = "";
 }
+
+function clearAll() {
+    let calculation = document.getElementById("historyArea");
+    calculation.innerHTML = "";
+    clearCalculator();
+}
