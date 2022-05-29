@@ -4,6 +4,8 @@ function appendOperation(operation) {
 
 function calculateResult() {
     let container = document.getElementById("resultArea");
+    let calculation = document.getElementById("historyArea");
+    calculation.innerHTML = container.innerHTML;
     let result = eval(container.innerHTML);
     container.innerHTML = result;
 }
@@ -15,4 +17,9 @@ function deleteLast() {
     } else {
         container.innerHTML = container.innerHTML.substring(0, container.innerHTML.length - 1);
     }
+}
+
+function clearCalculator() {
+    let container = document.getElementById("resultArea");
+    container.innerHTML = "";
 }

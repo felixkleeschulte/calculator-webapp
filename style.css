@@ -23,8 +23,20 @@ td:hover {
     cursor: pointer;
 }
 
+#historyArea {
+    height: 20vh;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px;
+    padding-bottom: 85px;
+    box-sizing: border-box;
+    font-size: 35px;
+    color: rgb(192, 192, 192);
+}
+
 #resultArea {
-    height: 30vh;
+    height: 10vh;
     background-color: rgb(40, 40, 40);
     display: flex;
     justify-content: flex-end;
