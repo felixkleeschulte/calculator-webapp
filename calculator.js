@@ -6,7 +6,7 @@ function calculateResult() {
     let container = document.getElementById("resultArea");
     let calculation = document.getElementById("historyArea");
     calculation.innerHTML = container.innerHTML;
-    let result = eval(container.innerHTML);
+    let result = (eval(container.innerHTML)).toFixed(5);
     container.innerHTML = result;
 }
 
